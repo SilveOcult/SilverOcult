@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SilverOcult</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Estilos.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+
+
+
+</head>
+<body>
+
+<svg class="grain" width="100%" height="100%">
+  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="5" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  <rect width="100%" height="100%" filter="url(#n)"/>
+</svg>
+<div class="atmosphere"></div>
+
+<!-- Nav -->
+<nav class="top-nav" id="topNav">
+  <a href="#" class="nav-brand">Silver<span>Ocult</span></a>
+  <ul class="nav-links">
+    <li><a href="#features">Aclaraciones</a></li>
+    <li><a href="#pricing">Catálogo</a></li>
+    <li><a href="#testimonials">Referencias</a></li>
+    <li><a href="#faq">Dudas</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">¡Agenda ya!</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="toggle-bar"></span><span class="toggle-bar"></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-links">
+      <a href="#" class="mobile-menu-link">Inicio</a>
+      <a href="#features" class="mobile-menu-link">Aclaraciones</a>
+      <a href="#pricing" class="mobile-menu-link">Catálogo</a>
+      <a href="#testimonials" class="mobile-menu-link">Referencias</a>
+      <a href="#faq" class="mobile-menu-link">Dudas</a>
+      <a href="#cta" class="mobile-menu-link">¡Agenda ya!</a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Side Panels -->
+<nav class="side-panel left" aria-label="Scroll indicators">
+  <span class="side-label">Desliza</span>
+  <div class="side-track"><div class="side-track-fill" id="leftTrack"></div></div>
+  <div class="side-dot active"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-readout" id="scrollPct">00</div>
+</nav>
+
+<nav class="side-panel right" aria-label="Status indicators">
+  <span class="side-label">Desliza</span>
+  <div class="side-track"><div class="side-track-fill" id="rightTrack"></div></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot active"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-dot"></div>
+  <div class="side-readout">Fin</div>
+</nav>
+
+<main class="main">
+
+  <!--  HERO  -->
+  <section class="hero" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+    </div>
+    <h1>Lecturas y<br><em>Hechizos</em></h1>
+    <p class="hero-sub">
+      Soy Sil, brujo y tarotista colombiano. Ofrezco orientación espiritual y servicios esotéricos personalizados para ayudarte
+      a encontrar equilibrio y oportunidades de todo tipo.
+    </p>
+    <div class="hero-ctas">
+      <a href="#pricing" class="btn-primary">Catálogo</a>
+      <a href="#features" class="btn-secondary">Aclaraciones</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric">
+        <div class="metric-value"><span class="counter" data-target="92.5" data-decimals="1">0.0</span><span>%</span></div>
+        <div class="metric-label">Nivel de <br> Satisfacción</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value"><span class="counter" data-target="230" data-decimals="0">0</span><span>+</span></div>
+        <div class="metric-label">Trabajos<br>realizados</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value"><span class="counter" data-target="1" data-decimals="0">0</span><span>año</span></div>
+        <div class="metric-label">trabajando</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ACLARACIONES ═══ -->
+  <section class="section" id="features" style="padding-bottom: 0rem;">
+
+    <div class="feature reveal">
+      <div class="feature-visual">
+        <img src="images/luminary 2.gif" alt="Intelligent automation dashboard">
+      </div>
+      <div class="feature-content">
+        <div class="feature-number">01</div>
+        <h2 class="section-title">Importante:</h2>
+        <p class="section-body">
+          - Los trabajos se realizan lo más rápido posible y siempre se avisa si hubo un contratiempo.<br>
+          - Si desea un trabajo con mayor urgencia, este tendrá un encargo.<br>
+          - No realice SPAM (mensajes consecutivos) ni llamadas en los medios de comunicación.<br>
+          - Solo se hacen hechizos para dañar a otro con justificación (jamás a menores de edad).<br>
+          - ¡No se realizan reembolsos!.<br>
+
+        </p>
+      </div>
+    </div>
+
+    <div class="feature reverse reveal">
+      <div class="feature-visual">
+        <img src="images/tm-luminary-01.gif" alt="Predictive analytics visualization">
+      </div>
+      <div class="feature-content">
+        <div class="feature-number">02</div>
+        <h2 class="section-title">Metodo de trabajo</h2>
+        <p class="section-body">
+          - Las lecturas de diagnóstico antes de un hechizo solo se hacen si son totalmente necesarias; estas se cobrarán antes de realizar el hechizo y después se descontará del mismo.<br>
+          - Se realiza una lectura después de realizado el hechizo solo para verificar si el hechizo funcionó correctamente o si habrá que realizar un refuerzo.
+          <br> - Siempre se envían fotos y (o) videos de la lectura o el hechizo en el momento en que se realiza, junto con las recomendaciones y pasos a seguir.
+          <br> - Los trabajos se realizan de 2 hasta 15 días habiles maximo dependiendo la agenda.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-visual">
+        <img src="images/holapapanatas.gif" alt="Unified team workspace">
+      </div>
+      <div class="feature-content">
+        <div class="feature-number">03</div>
+        <h2 class="section-title">Antes de agendar</h2>
+        <p class="section-body">
+          - Se realiza el pago completo de la lectura o hechizo y se envia el comprobante (no se agenda sin comprobante).<br>
+          - La consulta es gratis, Comunica la situación de manera honesta para hacer las recomendaciones adecuadas y garantizar la efectividad del servicio.<br>
+          - Se agradece tu paciencia y respeto en los medios de comunicación.
+          <br> - Al adquirir el servicio, estás aceptando los términos y condiciones ya mencionados anteriormente.
+          <br>
+          <br> Si tienes una pregunta al respecto, ve a la sección de dudas o pregunta antes de agendar.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PRICING -->
+
+  
+  <section class="section section-center" id="pricing" style="padding-top: 0%;">
+    <h2 class="section-title reveal reveal-d1">Hechizos</h2>
+    <p class="section-body reveal reveal-d2" style="margin-bottom: 3%;">Si no encuentras algo de tu agrado recuerda que tambien hago servicios personalizados. <br>
+      Los precios no incluyen comisión</p>
+
+    
+   
+  
+    
+    
+
+
+<div class="container swiper">
+  <div class="card-wrapper">
+    <ul class="card-list swiper-wrapper">
+           
+              <!-- lista 1 -->  
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Propios</div>
+        <div class="pricing-tier-sub">Hechizos para ti mism@, cambiar apariencia o eliminar malas energias</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Limpieza Propia</div>
+            </div>
+            <div class="price-yearly">27.000 COP / 11 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Sanación emocional</div>
+            </div>
+            <div class="price-yearly">35.000 COP / 14 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Protección</div>
+            </div>
+            <div class="price-yearly">30.000 COP / 12 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Auto endulzamiento</div>
+            </div>
+            <div class="price-yearly">15.000 COP / 9 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Auto endulzamiento<br> con manzana</div>
+            </div>
+            <div class="price-yearly">15.000 COP / 9 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Potenciador de belleza</div>
+            </div>
+            <div class="price-yearly">10.000 COP / 8 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Cambio fisico</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Atraer amor</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+      
+           
+
+
+<!-- lista 2 -->
+
+                
+
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Abundancia</div>
+        <div class="pricing-tier-sub">Hechizos para atraer cosas, conocimientos e ingresos</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Abre caminos general</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Abundancia economica</div>
+            </div>
+            <div class="price-yearly">16.000 COP / 9 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Conseguir trabajo</div>
+            </div>
+            <div class="price-yearly">20.000 COP / 10 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Atraer clientes</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Mejora académica</div>
+            </div>
+            <div class="price-yearly">25.000 COP / 11 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Aprender idioma</div>
+            </div>
+            <div class="price-yearly">30.000 COP / 12 USD</div>
+          </div>
+          
+          
+          <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+     
+           
+
+
+
+<!-- lista 3 -->
+                
+
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Vinculares</div>
+        <div class="pricing-tier-sub">Hechizos para parejas o interes amoroso</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Corresponder amor</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Formalizar relación</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Limpieza de vinsculo</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Sanación vincular</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Endulzamiento</div>
+            </div>
+            <div class="price-yearly">45.000 COP / 18 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Reconciliación</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Entenderse como anes</div>
+            </div>
+            <div class="price-yearly">30.000 COP / 12 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Equilibrio de vinculo</div>
+            </div>
+            <div class="price-yearly">32.000 COP / 12 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Armonizar relación</div>
+            </div>
+            <div class="price-yearly">30.000 COP / 12 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Unión de pareja</div>
+            </div>
+            <div class="price-yearly">50.000 COP / 20 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Aumento de pasión</div>
+            </div>
+            <div class="price-yearly">60.000 COP / 25 USD</div>
+          </div>
+          <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+     
+           
+
+<!-- lista 4 -->
+                
+
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Dominio</div>
+        <div class="pricing-tier-sub">Hechizos para controlar a la persona o sus sentimientos</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Acercamiento amoroso</div>
+            </div>
+            <div class="price-yearly">35.000 COP / 14 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Fidelidad</div>
+            </div>
+            <div class="price-yearly">45.000 COP / 18 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Retorno</div>
+            </div>
+            <div class="price-yearly">55.000 COP / 23 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Humillación</div>
+            </div>
+            <div class="price-yearly">65.000 COP / 28 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Desespero</div>
+            </div>
+            <div class="price-yearly">50.000 COP / 20 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Obsesión</div>
+            </div>
+            <div class="price-yearly">60.000 COP / 25 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Dominio con vudú</div>
+            </div>
+            <div class="price-yearly">65.000 COP / 28 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Adios orgullo</div>
+            </div>
+            <div class="price-yearly">45.000 COP / 18 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Solo mío</div>
+            </div>
+            <div class="price-yearly">50.000 COP / 20 USD</div>
+          </div>
+          
+          
+          <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+
+
+
+<!-- lista 4 -->
+                
+
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Destierro</div>
+        <div class="pricing-tier-sub">Para alejar personas de tu vida o de la de alguien mas</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Corte de lazos</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 16 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Obsesión a tu ausencia</div>
+            </div>
+            <div class="price-yearly">60.000 COP / 28 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Separación</div>
+            </div>
+            <div class="price-yearly">70.000 COP / 30 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Alejamiento</div>
+            </div>
+            <div class="price-yearly">60.000 COP / 25 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Olvidar aquel amor</div>
+            </div>
+            <div class="price-yearly">45.000 COP / 18 USD</div>
+          </div>
+                   <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+
+
+
+      <!-- lista 6 -->
+                
+
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Amarres</div>
+        <div class="pricing-tier-sub">Hechizos para que solo existas tu en la vida de la otra persona</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Amarre simple</div>
+            </div>
+            <div class="price-yearly">60.000 COP / 25 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Apropiate de su corazón</div>
+            </div>
+            <div class="price-yearly">80.000 COP / 40 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Entrelazados (vudú)</div>
+            </div>
+            <div class="price-yearly">100.000 COP / 50 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Siete nudos</div>
+            </div>
+            <div class="price-yearly">370.000 COP / 120 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Siete nudos reforzado</div>
+            </div>
+            <div class="price-yearly">700.000 COP / 220 USD</div>
+          </div>
+                   <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+
+
+
+
+      <!-- lista 7 -->
+                
+
+    
+      <div class="pricing-card featured reveal reveal-d1 swiper-slide">
+        <div class="pricing-tier">Otros</div>
+        <div class="pricing-tier-sub">Hechizos variados para eliminar brujerias, controlar tu estado de animo o salud, entre otros.</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Limpieza de brujeria</div>
+            </div>
+            <div class="price-yearly">75.000 COP / 38 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Voltear hechizos</div>
+            </div>
+            <div class="price-yearly">50.000 COP / 20 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Cierre de caminos</div>
+            </div>
+            <div class="price-yearly">90.000 COP / 48 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Control familiar</div>
+            </div>
+            <div class="price-yearly">50.000 COP / 25 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Manifestar deseos</div>
+            </div>
+            <div class="price-yearly">10.000 COP / 8 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Calmar ansiedad</div>
+            </div>
+            <div class="price-yearly">5.000 COP / 4 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Eliminar bloqueo energetico</div>
+            </div>
+            <div class="price-yearly">35.000 COP / 18 USD</div>
+          </div>
+
+
+                   <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+        
+
+        
+    </ul>
+    <div class="swiper-pagination"></div>
+</div>
+</div>
+
+  </section>
+
+
+ <!-- LECTURAS -->
+
+
+
+<section class="section section-center" id="pricing" style="padding-top: 0%;">
+    <h2 class="section-title reveal reveal-d1">Lecturas</h2>
+    <p class="section-body reveal reveal-d2" style="margin-bottom: 7%;">Si no encuentras algo de tu agrado recuerda que tambien hago servicios personalizados. <br>
+      Los precios no incluyen comisión</p>
+
+           
+              <!-- lista 1 -->  
+    <div class="pricing-grid">
+      <div class="pricing-card featured reveal reveal-d1e">
+        <div class="pricing-tier-sub">Si deseas la lectura en PDF esto tomara mas tiempo del estimado.</div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">pregunta de si/no</div>
+            </div>
+            <div class="price-yearly">5.000 COP / 3 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Dos preguntas de si/no</div>
+            </div>
+            <div class="price-yearly">8.000 COP / 4 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Pregunta extensa</div>
+            </div>
+            <div class="price-yearly">7.000 COP / 4,50 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Dos preguntas extensas</div>
+            </div>
+            <div class="price-yearly">12.000 COP / 6 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura Vincular</div>
+            </div>
+            <div class="price-yearly">25.000 COP / 10 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura ex-vincular</div>
+            </div>
+            <div class="price-yearly">25.000 COP / 10 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Mensaje ex-vincular</div>
+            </div>
+            <div class="price-yearly">8.000 COP / 3 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura de crush</div>
+            </div>
+            <div class="price-yearly">20.000 COP / 8 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura de futuro amor</div>
+            </div>
+            <div class="price-yearly">25.000 COP / 11 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura generalr</div>
+            </div>
+            <div class="price-yearly">35.000 COP / 15 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura de brujeria</div>
+            </div>
+            <div class="price-yearly">40.000 COP / 20 USD</div>
+          </div>
+          <div class="price-option monthly active">
+            <div>
+              <div class="price-label">Lectura anual</div>
+            </div>
+            <div class="price-yearly">60.000 COP / 30 USD</div>
+          </div>
+          <div class="price-option monthly active"></div>
+      <a href="#cta" class="btn-primary">Agenda ya</a>
+      </div>
+      </div>
+
+  </section>
+
+
+
+
+
+
+
+
+  <div class="silk-divider reveal"></div>
+
+  <!--  TESTIMONIOS  -->
+  <section class="section section-center" id="testimonials" style="padding-top: 0;">
+    <p class="section-tag reveal">Lo que dicen de mi trabajo</p>
+    <h2 class="section-title reveal reveal-d1">Referencias</h2>
+    <p class="section-tag reveal">Para dejar tu referencia, escribeme una vez finalizado el servicio con un breve mensaje y lo subire en la página.</p>
+
+    <div class="logo-ticker reveal">
+    <div class="ticker-track" id="tickerTrack">
+
+      
+      <div class="testimonial-card reveal reveal-d1">
+        <p class="testimonial-quote">"Bastante Cumplido, nunca se retraza a veces entrega hasta el mismo dia."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+            <div class="testimonial-name">Mec</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-d2">
+        <p class="testimonial-quote">"La primera vez que me hago un hechizo y quede muy satisfecha, funciono muy rapido c:"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MR</div>
+            <div class="testimonial-name">MR</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-d3">
+        <p class="testimonial-quote">"La verdad tenia desconfianza al inicio por otras malas experiencias pero fue muy agradable la atención"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SL</div>
+            <div class="testimonial-name">SL</div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="silk-divider reveal"></div>
+
+  <!--  FAQ  -->
+  <section class="section section-center" id="faq">
+    <p class="section-tag reveal">Preguntas frecuentes</p>
+    <h2 class="section-title reveal reveal-d1">Las preguntas mas realizadas:</strong></h2>
+
+    <div class="faq-list reveal reveal-d2">
+      <div class="faq-controls">
+        <button class="faq-toggle-all" id="faqToggleAll">Expandir todo</button>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo puedo realizar un rembolso?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">No se hacen rembolsos, sin embargo; puede quedar el saldo del hechizo o lectura a favor para realizar otro en dado caso de que el servicio principal no se haya realizado aún.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cuánto tarda es surtir efecto un hechizo?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">La duración de un trabajo es bastante relativa, pueden depender de la persona si esta afecta el trabajo con malas energias o precipitandose a los resultados, siempre realizo respectivas recomendaciones una vez realizado el trabajo.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Es posible realizar la mitad del pago de un trabajo?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Se puede llegar a un acuerdo cuando son trabajos costosos, en estos caso se puede realizar un abono y cuando el trabajo este pagado en casi su totalidad este se podria realiza, siempre y cuando ambas partes esten comodas.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Qué metodo de pago puedo utilizar si no soy de colombia?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Siempre a la hora de agendar notifico el metodo de pago mas comodo que tengo a mi disposicón, la conversión siempre se hace de tu moneda a dolares, no de pesos Colombianos. </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Existe algun descuento?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Si, constantemente se realizan descuentos, para estar pendiente de estos sigueme en mis redes habilitadas o simplemente agregame a whatsapp una vez me hayas escrito anteriormente.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER CTA ═══ -->
+  <section class="footer-cta" id="cta">
+    <p class="section-tag reveal">¿Listo(a) para tomar las riendas?</p>
+    <h2 class="section-title reveal reveal-d1">Contáctame y pregunta<br> sin compromiso</h2>
+    <div class="footer-ctas reveal reveal-d3">
+      <a href="https://wa.me/573214392284" target="_blank" rel="nofollow" class="btn-primary">whatsapp</a>
+      <a href="#pricing" class="btn-secondary">Volver al catálogo</a>
+    </div>
+
+    <div class="footer-bar reveal reveal-d4" style="margin-top: 80px;">
+      <div class="footer-brand">Silver Ocult &mdash; 2026</div>
+      <div class="footer-links">
+        <span class="footer-credit"><a href="https://x.com/silveroccultt?s=21" target="_blank" rel="nofollow">X</a></span>
+        <span class="footer-credit"><a href="https://www.tiktok.com/@silver_ocult?_r=1&_t=ZS-96yOn2RSkIm" target="_blank" rel="nofollow">TikTok</a></span>
+        <span class="footer-credit">Diseñador: <a href="https://www.instagram.com/juantorresx02?igsh=MXAzMTBwcmJhZzJraA%3D%3D&utm_source=qr" target="_blank" rel="nofollow">JT</a></span>
+        
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="scriptbrujil.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
